@@ -1,0 +1,21 @@
+# Python bytecode cache
+__pycache__/
+*.pyc
+
+# Virtual environments
+venv/
+.venv/
+
+# Model weights — 19 GB, not ours to redistribute, exceed GitHub's 100 MB file limit
+*.gguf
+models/
+
+# Credentials — never commit these
+*.pem
+*.key
+.env
+.ssh/
+
+# OS clutter
+.DS_Store
+Thumbs.db
