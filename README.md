@@ -156,7 +156,9 @@ with a mean of 3.63 GiB/s and a coefficient of variation of 6.3%.
 
 This yields a predictive rule for the platform:
 
+```
 tg throughput (t/s) ~= 3.6 / model size (GiB)
+```
 
 
 Tested against a model outside this sweep: Llama 3.2 3B Q8_0 at 3.18 GiB
@@ -258,17 +260,18 @@ honest numbers ahead of the controlled sweep.
 The controlled sweep supersedes everything in Results.
 
 ## Repository layout
-
+```
 configs.py generates the 48-configuration matrix
 show.py summarizes raw JSON into readable tables
 data/raw/ raw llama-bench JSON output
 tests/fixtures/ saved output used by unit tests
-
+```
 
 ## Reproducing
 
 Requires a Raspberry Pi 4 (4GB), llama.cpp built per the table above, and the
 GGUF model files from their respective Hugging Face repositories. Model weights
 are not redistributed here.
-
+```
 python3 show.py
+```
